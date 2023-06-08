@@ -317,6 +317,8 @@ engine:
                 'For local development a `docker compose` database instance will be started using `spring-boot-docker-compose`. 
                 '
     - merge:
+        - include: [ "**" ]
+        - exclude: [ "config/app-operator/*.yaml" ]
         - include: [ "config/app-operator/*.yaml" ]
           chain:
             - type: ReplaceText
