@@ -1,0 +1,310 @@
+accelerator:
+  displayName: The Developer Conference Spring Accelerator
+  description: A Spring Boot Restful web application including OpenAPI v3 document generation and database persistence,
+    based on a three-layer architecture.
+  iconUrl: data:image/png;base64,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
+  tags:
+  - java
+  - spring
+  - web
+  - jpa
+  - postgresql
+  - tanzu
+
+  options:
+    - name: artifactId
+      inputType: text
+      defaultValue: "customer-profile"
+      label: Module artifact name
+      required: true
+    - name: groupId
+      inputType: text
+      defaultValue: "com.example"
+      label: Module group name
+      required: true
+    - name: packageName
+      inputType: text
+      defaultValue: "com.example.customerprofile"
+      label: Module root package
+      required: true
+    - name: buildTool
+      label: Build Tool
+      inputType: select
+      required: true
+      defaultValue: maven
+      choices:
+        - value: maven
+          text: Maven (https://maven.apache.org/)
+        - value: gradle
+          text: Gradle (https://gradle.org/)
+    - name: exposeOpenAPIEndpoint
+      label: Expose OpenAPI endpoint?
+      dataType: boolean
+      defaultValue: false
+    - name: apiSystem
+      label: System API Belongs To
+      inputType: text
+      required: true
+      defaultValue: "profile-management"
+      dependsOn:
+        name: exposeOpenAPIEndpoint
+    - name: apiOwner
+      label: Owner of API
+      inputType: text
+      required: true
+      defaultValue: "customer-relations-department"
+      dependsOn:
+        name: exposeOpenAPIEndpoint
+    - name: apiDescription
+      label: API Description
+      inputType: text
+      required: true
+      defaultValue: "Manage customer profiles"
+      dependsOn:
+        name: exposeOpenAPIEndpoint
+    - name: databaseType
+      inputType: select
+      label: Database type to use
+      choices:
+        - value: "postgres"
+          text: PostgreSQL
+        - value: "mysql"
+          text: MySQL
+      defaultValue: "postgres"
+      required: true
+  imports:
+  - name: spring-boot-postgresql
+    expose:
+    - name: databaseName
+      dependsOn:
+        name: databaseType
+        value: postgres
+  - name: spring-boot-mysql
+    expose:
+    - name: databaseName
+      dependsOn:
+        name: databaseType
+        value: mysql
+  - name: spring-boot-database
+    expose:
+    - name: databaseMigrationTool
+    - name: databaseIntegrationTestType
+  - name: live-update
+    expose:
+      - name: liveUpdateIDESupport
+        dependsOn:
+          name: buildTool
+          value: 'maven'
+  - name: tap-workload
+  - name: build-wrapper-maven
+  - name: build-wrapper-gradle
+
+engine:
+  let:
+    - name: packageDirectory
+      expression: '#packageName.replace(".", "/")'
+    - name: workloadResourceName
+      expression: '#artifactId.toLowerCase()'
+    - name: databaseResourceName
+      expression: '#databaseName.toLowerCase()'
+  chain:
+    # Maven is selected
+    - condition: "#buildTool == 'maven'"
+      exclude: [ "settings.gradle.kts", "build.gradle.kts"]
+      merge:
+        - include: [ "**" ]
+          exclude: [ "pom.xml", "README.md" ]
+        - include: [ "pom.xml" ]
+          chain:
+            - type: ReplaceText
+              substitutions:
+                - text: "<groupId>com.vmware.tap.accelerators</groupId>"
+                  with: "'<groupId>' + #groupId + '</groupId>'"
+        - include: [ "README.md" ]
+          chain:
+            - type: ReplaceText
+              regex:
+                pattern: "--- StartGradle[\\s\\S]+?--- EndGradle"
+                with: "''"
+            - type: ReplaceText
+              regex:
+                pattern: "--- StartMaven\\s|--- EndMaven\\s"
+                with: "''"
+    # end of the Maven specific part
+
+    # Gradle is selected
+    - condition: "#buildTool == 'gradle'"
+      exclude: [ "pom.xml"]
+      merge:
+        - include: [ "**" ]
+          exclude: [ "build.gradle.kts", "README.md" ]
+        - include: [ "build.gradle.kts" ]
+          chain:
+            - type: ReplaceText
+              substitutions:
+                - text: "group = \"com.vmware.tap.accelerators\""
+                  with: "'group = \"' + #groupId + '\"'"
+        - include: [ "README.md" ]
+          chain:
+            - type: ReplaceText
+              regex:
+                pattern: "--- StartMaven[\\s\\S]+?--- EndMaven"
+                with: "''"
+            - type: ReplaceText
+              regex:
+                pattern: "--- StartGradle\\s|--- EndGradle\\s"
+                with: "''"
+    # end of the Gradle specific part
+
+    # OpenAPI Endpoint Auto-registration
+    - merge:
+      - include: [ "**" ]
+        exclude: [ "config/workload-basic.yaml", "config/workload-api-provider.yaml" ]
+      - include: [ "config/workload-api-provider.yaml" ]
+        condition: "#exposeOpenAPIEndpoint"
+        chain:
+          - type: ReplaceText
+            condition: "#exposeOpenAPIEndpoint"
+            substitutions:
+              - text: "SYSTEM_VAL"
+                with: "#apiSystem"
+              - text: "OWNER_VAL"
+                with: "#apiOwner"
+              - text: "DESCRIPTION_VAL"
+                with: "#apiDescription"
+          - type: RewritePath
+            rewriteTo: "'config/workload.yaml'"
+      - include: [ "config/workload-basic.yaml" ]
+        condition: "!#exposeOpenAPIEndpoint"
+        chain:
+          - type: RewritePath
+            rewriteTo: "'config/workload.yaml'"
+    # End OpenAPI Endpoint Auto-registration
+
+    # Workload Resource name and database resource name
+    - merge:
+      - exclude: [ "config/**" ]
+      - include: [ "config/workload.yaml" ]
+        chain:
+          - type: ReplaceText
+            substitutions:
+              - text: "rest-service-db"
+                with: "#workloadResourceName"
+              - text: "customer-database"
+                with: "#databaseResourceName"
+    # End Workload Resource name
+
+    - merge:
+        - type: InvokeFragment
+          reference: spring-boot-database
+        - include: [ "**" ]
+      onConflict: UseFirst
+
+    - condition: "#databaseType == 'postgres'"
+      merge:
+        - type: InvokeFragment
+          reference: spring-boot-postgresql
+        - include: [ "**" ]
+      onConflict: UseFirst
+
+    - condition: "#databaseType == 'mysql'"
+      merge:
+        - type: InvokeFragment
+          reference: spring-boot-mysql
+        - include: [ "**" ]
+      onConflict: UseFirst
+
+    - condition: "#buildTool == 'maven'"
+      merge:
+        - type: InvokeFragment
+          reference: live-update
+        - include: [ "**" ]
+      onConflict: UseFirst
+
+    - merge:
+        - type: InvokeFragment
+          reference: tap-workload
+        - include: [ "**" ]
+      onConflict: UseFirst
+
+    - merge:
+      - exclude: [ "**/*.java" ]
+      - include: [ "**/*.java" ]
+        let:
+          - name: packageDirectory
+            expression: '#packageName.replace(".", "/")'
+        chain:
+          - type: ReplaceText
+            substitutions:
+              - text: "com.vmware.tap.accelerators.restservicedb"
+                with: "#packageName"
+          - type: RewritePath
+            regex: "src/(?<sourceset>.*)/java/(?<currentpackage>.*/)restservicedb(?<untouchedpath>.*)"
+            rewriteTo: "'src/' + #sourceset + '/java/' + #packageDirectory + '/' + #untouchedpath"
+
+    - merge:
+      - include: [ "**/*.jar" ]
+      - exclude: [ "**/*.jar" ]
+        chain:
+        - type: ReplaceText
+          substitutions:
+          - text: "rest-service-db"
+            with: "#artifactId"
+
+    - merge:
+      - include: [ "**" ]
+      - type: InvokeFragment
+        condition: "#buildTool == 'maven'"
+        reference: build-wrapper-maven
+      - type: InvokeFragment
+        condition: "#buildTool == 'gradle'"
+        reference: build-wrapper-gradle
+
+    # DATABASE.md
+    - merge:
+      - exclude: [ "DATABASE.md" ]
+      - condition: "#databaseType == 'mysql'"
+        include: [ "DATABASE.md" ]
+        chain:
+          - type: ReplaceText
+            regex:
+              pattern: "Postgres"
+              with: "'MySQL'"
+          - type: ReplaceText
+            regex:
+              pattern: "PostgreSQL"
+              with: "'MySQL'"
+          - type: ReplaceText
+            regex:
+              pattern: "postgresql"
+              with: "'mysql'"
+          - type: ReplaceText
+            regex:
+              pattern: "postgres"
+              with: "'mysql'"
+          - type: ReplaceText
+            substitutions:
+              - text: "customer-database"
+                with: "#databaseResourceName"
+          - type: ReplaceText
+            regex:
+              pattern: "\\[local\\]"
+              with: |
+                'For local development a `docker compose` database instance will be started using `spring-boot-docker-compose`. 
+                '
+      - condition: "#databaseType == 'postgres'"
+        include: [ "DATABASE.md" ]
+        chain:
+          - type: ReplaceText
+            substitutions:
+              - text: "customer-database"
+                with: "#databaseResourceName"
+          - type: ReplaceText
+            regex:
+              pattern: "\\[local\\]"
+              with: |
+                'For local development a `docker compose` database instance will be started using `spring-boot-docker-compose`. 
+                '
+    # end of DATABASE.md
+
+    - type: Provenance
