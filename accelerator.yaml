@@ -72,13 +72,13 @@ accelerator:
       defaultValue: "postgres"
       required: true
   imports:
-  - name: spring-boot-postgresql
+  - name: spring-boot-postgresql-customized
     expose:
     - name: databaseName
       dependsOn:
         name: databaseType
         value: postgres
-  - name: spring-boot-mysql
+  - name: spring-boot-mysql-customized
     expose:
     - name: databaseName
       dependsOn:
@@ -88,12 +88,22 @@ accelerator:
     expose:
     - name: databaseMigrationTool
     - name: databaseIntegrationTestType
-  - name: live-update
+  - name: live-update-customized
     expose:
       - name: liveUpdateIDESupport
         dependsOn:
           name: buildTool
           value: 'maven'
+      - name: sourceRepositoryPrefix
+        dependsOn:
+          name: liveUpdateIDESupport
+      - name: k8sContext
+        dependsOn:
+          name: liveUpdateIDESupport
+      - name: namespaceName
+        dependsOn:
+          name: liveUpdateIDESupport
+
   - name: tap-workload
   - name: build-wrapper-maven
   - name: build-wrapper-gradle
@@ -191,6 +201,8 @@ engine:
                 with: "#workloadResourceName"
               - text: "customer-database"
                 with: "#databaseResourceName"
+              - text: "namespace-name"
+                with: "#namespaceName"
     # End Workload Resource name
 
     - merge:
@@ -202,21 +214,21 @@ engine:
     - condition: "#databaseType == 'postgres'"
       merge:
         - type: InvokeFragment
-          reference: spring-boot-postgresql
+          reference: spring-boot-postgresql-customized
         - include: [ "**" ]
       onConflict: UseFirst
 
     - condition: "#databaseType == 'mysql'"
       merge:
         - type: InvokeFragment
-          reference: spring-boot-mysql
+          reference: spring-boot-mysql-customized
         - include: [ "**" ]
       onConflict: UseFirst
 
     - condition: "#buildTool == 'maven'"
       merge:
         - type: InvokeFragment
-          reference: live-update
+          reference: live-update-customized
         - include: [ "**" ]
       onConflict: UseFirst
 
@@ -304,6 +316,13 @@ engine:
               with: |
                 'For local development a `docker compose` database instance will be started using `spring-boot-docker-compose`. 
                 '
+    - merge:
+        - include: [ "config/app-operator/*.yaml" ]
+          chain:
+            - type: ReplaceText
+              substitutions:
+                - text: "namespace-name"
+                  with: "#namespaceName"
     # end of DATABASE.md
 
     - type: Provenance
